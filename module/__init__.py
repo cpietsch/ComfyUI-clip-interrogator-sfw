@@ -2,7 +2,7 @@
 import os
 
 # Install clip_interrogator
-CI_VERSION = "0.6.0"
+CI_VERSION = "0.6.1"
 needs_install = False
 try:
     import clip_interrogator
@@ -13,7 +13,7 @@ except ImportError:
 
 if needs_install:
     import sys
-    os.system(f"{sys.executable} -m pip install clip-interrogator=={CI_VERSION}")
+    os.system(f"{sys.executable} -m pip install clip-interrogator-sfw=={CI_VERSION}")
 
 
 # Create model_config.yaml to make model paths explicit;
